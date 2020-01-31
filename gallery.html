@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="src/jquery.littlelightbox.css">
+		<script>
+			$(function(){
+			$("#headersection").load("header.html"); 
+			$("#footersection").load("footer.html"); 
+			});
+		</script>
+		<style> .lightbox {} </style>
+	</head>
+	<body>
+		<div class="header">
+			<img src="images/logos/tw_banner.png" style="height:100%;float:left;"/>
+		</div>
+		<div class="navbar">
+			<img id="logoplaceholder" src="images/logos/logo.png" class="logoEmpty"/>
+			<a href="home.html">Home</a>
+			<a href="services.html">Services</a>
+			<a href="about.html">About</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a>
+			<p style="float:right;padding-right:10px;color:#C3C3C3;">+91 75 650 648 24/25</p>
+			<p class="fa fa-phone" style="float:right;padding-right:10px;color:#C3C3C3;"/> 
+			<p style="float:right;padding-right:10px;color:#C3C3C3;">contact@teamwork.net.in</p>	
+			<p class="fa fa-envelope" style="float:right;padding-right:10px;color:#C3C3C3;"/>			
+		</div>
+		<script>
+			// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				document.getElementById("logoplaceholder").className = 'logo';
+			  } else {
+				document.getElementById("logoplaceholder").className = 'logoEmpty';
+			  }
+			}
+		</script>
+		<img src="images/banner/gallery_banner.jpg" width="100%" height="250">
+		<div class="gallery-singleColumn">
+			<div class="gallery-banner-section">
+				<h2>Gallery</h2><hr style="width: 50px; border-color: #f00;margin-bottom: 30px;">
+				<div>
+					<a class="lightbox thumbnail" href="images/gallery/g1.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g1.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g2.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g2.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g1.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g1.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g1.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g2.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g2.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g1.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g1.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g1.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g2.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g2.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g1.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g1.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g2.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g2.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g1.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g1.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g2.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g2.jpg" alt="Rahul Artist">
+					</a>
+					<a class="lightbox thumbnail" href="images/gallery/g1.jpg" data-littlelightbox-group="gallery" title="Gallery">
+						<h3>+</h3>
+						<img src="images/gallery/g1.jpg" alt="Rahul Artist">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="row">
+				<div style="width:50%;float:left;text-align:left;">
+				    <div class="newspaper">
+						Teamwork Transport Solutions LLP, incorporated on 11 Oct 2019. It started its first operation in January 2020 with the launch of Metroline.
+						Soon after it spread its operation to cab domain with the launch of MetroCab. This organization is focusing on transport domain and its related
+						fields. As time passes we entered into holiday management department with launch of TripBuzz. We comitted to proving services with best quality and dedication.
+						<br/>
+						<a href="#">Read more ...</a>
+					</div>
+				</div>
+				<div style="width:50%;float:left;text-align:right;">
+					<p>
+					Copyright &copy; 2020 Teamwork Group<br/>
+					Maintained by<br/>
+					<b>Technology Department, Teamwork Group</b>
+					</P>
+					<h2>Teamwork Group</h2>
+				</div>
+			</div>
+		</div>
+
+		<script src="src/jquery.littlelightbox.js"></script>
+		<script> 
+			$('.lightbox').littleLightBox();
+		</script>
+		<script type="text/javascript">
+
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-36251023-1']);
+		  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+
+		</script>
+
+	</body>
+</html>

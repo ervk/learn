@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Teamwork - Home</title>
+		<link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<div class="header">
+			<img src="images/logos/tw_banner.png" style="height:100%;float:left;"/>
+		</div>
+		<div class="navbar">
+			<img id="logoplaceholder" src="images/logos/logo.png" class="logoEmpty"/>
+			<a href="home.html">Home</a>
+			<a href="nopage.html">Services</a>
+			<a href="about.html">About</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="contact.html">Contact</a>
+			<p style="float:right;padding-right:10px;color:#C3C3C3;">+91 75 650 648 24/25</p>
+			<p class="fa fa-phone" style="float:right;padding-right:10px;color:#C3C3C3;"/> 
+			<p style="float:right;padding-right:10px;color:#C3C3C3;">contact@teamwork.net.in</p>	
+			<p class="fa fa-envelope" style="float:right;padding-right:10px;color:#C3C3C3;"/>			
+		</div>
+		<script>
+			// When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+				document.getElementById("logoplaceholder").className = 'logo';
+			  } else {
+				document.getElementById("logoplaceholder").className = 'logoEmpty';
+			  }
+			}
+		</script>
+		<div class="row">
+			<div class="leftcolumn">
+				<div class="card">
+					<div class="slideshow-container">
+						<div class="mySlides fade">
+							<img src="images/slideshow/en-p1.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="images/slideshow/en-p2.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="images/slideshow/en-p3.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="images/slideshow/en-p4.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="images/slideshow/en-p5.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="images/slideshow/en-p6.png" style="width:100%">
+						</div>
+						<div class="mySlides fade">
+							<img src="images/slideshow/en-p7.png" style="width:100%">
+						</div>
+				    	<div class="mySlides fade">
+							<img src="images/slideshow/en-p8.png" style="width:100%">
+						</div>
+					</div>
+					<br>
+					<div style="text-align:center">
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span>
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span> 
+						<span class="dot"></span>			
+					</div>
+					<script>
+						var slideIndex = 0;
+						showSlides();
+
+						function showSlides() {
+							var i;
+							var slides = document.getElementsByClassName("mySlides");
+							var dots = document.getElementsByClassName("dot");
+							for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+							}
+							slideIndex++;
+							if (slideIndex > slides.length) {slideIndex = 1}    
+							for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+							}
+							slides[slideIndex-1].style.display = "block";  
+							dots[slideIndex-1].className += " active";
+							setTimeout(showSlides, 2000); // Change image every 2 seconds
+						}
+					</script>
+				</div>
+				<div class="newspaper">
+					
+				</div>
+				<div class="row">
+					<div class="equalSplitColumnFirst">
+						<div class="card">
+							<img src="images/services/ml.png" class="banner"/>
+							<p>
+							Metroline is intercity bus service from Teamwork transport division. this is aimed to provide best bus service with best in class vehicles.
+							Currently Metroline is operating AC buses from BharatBenz (a Diamler AG company).Some of key highlights are ...
+							</P>
+							<ul>
+								<li>Uniformed Crew</li>
+								<li>SOS Call</li>
+								<li>Comfertable leg room</li>
+								<li>Online reservation</li>
+								<li>USB Charger</li>
+								<li>TV & Music</li>
+								<li>WiFi & CCTV</li>
+							</ul>
+						</div>
+					</div>
+					<div class="equalSplitColumn">
+						<div class="card">
+							<img src="images/services/mc.png" class="banner"/>
+							<p>
+								MetroCab is taxi cum cab service from Temawork transport division. this is aimed to provide cars and suvs for personal travel, airport service,
+								city travel etc. MetroCab employ best in class well maintained vehicles. Some of key highlights are ...
+							</P>
+							<ul>
+								<li>Uniformed Crew</li>
+								<li>Easy billing</li>
+								<li>Aesthetic vehicle</li>
+								<li>Online reservation</li>
+								<li>Limousine service</li>
+								<li>GPS tracking</li>
+							</ul>
+						</div>
+					</div>
+					<div class="equalSplitColumn">
+						<div class="card">
+							<img src="images/services/tb.png" class="banner"/>
+							<p>
+								TripBuzz is trip planning agency from Teamwork Holidays division. With our expert holiday enthusiast executives we plan some of best 
+								holidays. As of now we are concentrating on domestic destinations. But soon we will include international destinations as well. Some of key highlights are ...
+							</P>
+							<ul>
+								<li>Ayodhya</li>
+								<li>Prayagraj</li>
+								<li>Varanasi</li>
+								<li>Sravasti</li>
+								<li>Nainital</li>
+								<li>Nepal</li>
+							</ul>
+							Many more ...
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightcolumn">
+				<div class="card">
+					<h2>Social Connectivity</h2>
+					<a href="#" class="socialMedia fa fa-facebook"></a>
+					<a href="#" class="socialMedia fa fa-twitter"></a>
+					<a href="#" class="socialMedia fa fa-youtube"></a>
+					<a href="#" class="socialMedia fa fa-instagram"></a>
+				</div>
+				<div class="card">
+					<h2>News</h2>
+					<p> Date : 15 Jan 2020 <br/>
+					<b> Jalalpur Lucknow Service </b>
+					</p>
+					<p>On 15 Jan 2020, we are launching our first intercity service from Jalalpur,Ambedkarnagar to Medical College,Lucknow. 
+					Departure time from jalalpur is 7:40 AM in morning and departure time from Lucknow is 1:40 PM. This will be AC service.
+					call +9107565064824/5 for more information.
+					</p>
+				</div>
+				<div class="card">
+					<h2>News</h2>
+					<p> Date : 28 Dec 2019 <br/>
+					<b> New bus to fleet </b>
+					</p>
+					<img src="images/news/new_bus.jpeg" style="width:100%;">
+					<p>New BharatBenz 917 AC bus is added to our fleet. BharatBenz is well known brand for
+					Its comfort and quality. BharatBenz is from Diamler AG family. This bus is going to 
+					assign for Metroline service.
+					</p>
+				</div>				
+			</div>
+		</div>
+		<div class="footer">
+			<div class="row">
+				<div style="width:50%;float:left;text-align:left;">
+				    <div class="newspaper">
+						Teamwork Transport Solutions LLP, incorporated on 11 Oct 2019. It started its first operation in January 2020 with the launch of Metroline.
+						Soon after it spread its operation to cab domain with the launch of MetroCab. This organization is focusing on transport domain and its related
+						fields. As time passes we entered into holiday management department with launch of TripBuzz. We committed to proving services with best quality and dedication.
+						<br/>
+						<a href="about.html">Read more ...</a>
+					</div>
+				</div>
+				<div style="width:50%;float:left;text-align:right;">
+					Copyright &copy; 2020 Teamwork Group<br/>
+					Maintained by<br/>
+					<b>Technology Department, Teamwork Group</b>
+					<h2>Teamwork Group</h2>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
